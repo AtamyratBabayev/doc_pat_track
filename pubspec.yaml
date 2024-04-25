@@ -1,0 +1,25 @@
+name: doc_pat_track
+description: "Application for adding, updating and retreiving patients of doctor"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  change_app_package_name: ^1.1.0
+
+  flutter_lints: ^3.0.0
+
+flutter:
+
+  uses-material-design: true
