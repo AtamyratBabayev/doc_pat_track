@@ -11,6 +11,22 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/services.dart';
 
+class $AssetsFontsGen {
+  const $AssetsFontsGen();
+
+  /// File path: assets/fonts/gilroy_light.ttf
+  String get gilroyLight => 'assets/fonts/gilroy_light.ttf';
+
+  /// File path: assets/fonts/gilroy_medium.ttf
+  String get gilroyMedium => 'assets/fonts/gilroy_medium.ttf';
+
+  /// File path: assets/fonts/gilroy_regular.ttf
+  String get gilroyRegular => 'assets/fonts/gilroy_regular.ttf';
+
+  /// List of all assets
+  List<String> get values => [gilroyLight, gilroyMedium, gilroyRegular];
+}
+
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
@@ -32,6 +48,7 @@ class $AssetsIconsGen {
 class Assets {
   Assets._();
 
+  static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsIconsGen icons = $AssetsIconsGen();
 }
 
