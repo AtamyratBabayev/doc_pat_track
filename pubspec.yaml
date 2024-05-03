@@ -64,6 +64,16 @@ flutter:
     - assets/icons/
     - assets/images/
 
+  fonts:
+    - family: Gilroy
+      fonts:
+        - asset: assets/fonts/gilroy_medium.ttf
+          weight: 500
+        - asset: assets/fonts/gilroy_regular.ttf
+          weight: 400
+        - asset: assets/fonts/gilroy_light.ttf
+          weight: 300
+
 flutter_intl:
   enabled: true
   class_name: AppLocalizations
