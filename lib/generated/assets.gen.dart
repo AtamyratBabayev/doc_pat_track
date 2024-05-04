@@ -51,12 +51,15 @@ class $AssetsIconsGen {
   /// File path: assets/icons/flag_usa.svg
   SvgGenImage get flagUsa => const SvgGenImage('assets/icons/flag_usa.svg');
 
+  /// File path: assets/icons/plus.svg
+  SvgGenImage get plus => const SvgGenImage('assets/icons/plus.svg');
+
   /// File path: assets/icons/search.svg
   SvgGenImage get search => const SvgGenImage('assets/icons/search.svg');
 
   /// List of all assets
   List<SvgGenImage> get values =>
-      [eye, eyeOff, flagRussia, flagTurkmenistan, flagUsa, search];
+      [eye, eyeOff, flagRussia, flagTurkmenistan, flagUsa, plus, search];
 }
 
 class Assets {
