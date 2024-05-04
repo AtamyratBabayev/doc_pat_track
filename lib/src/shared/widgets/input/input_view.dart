@@ -59,7 +59,8 @@ class _InputState extends State<Input> {
             keyboardType: props.inputType,
             textInputAction: props.keyboardAction,
             inputFormatters: props.inputFormatters,
-            style: theme.textTheme.labelLarge,
+            style: theme.textTheme.labelLarge
+                ?.copyWith(fontWeight: FontWeight.bold),
             maxLength: props.maxLength,
             maxLines: props.maxLines,
             minLines: props.minLines,
