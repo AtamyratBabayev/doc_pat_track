@@ -7,12 +7,12 @@ const _borderRadius = 15.0;
 const _contentPaddingHorizontal = 25.0;
 const _contentPaddingVertical = 28.0;
 
-class AppLightTextInputTheme {
-  const AppLightTextInputTheme._();
+class AppDarkTextInputTheme {
+  const AppDarkTextInputTheme._();
 
   static final InputDecorationTheme data = InputDecorationTheme(
     filled: true,
-    fillColor: MaterialStateColor.resolveWith((Set<MaterialState> states) {
+    fillColor: MaterialStateColor.resolveWith((states) {
       if (states.contains(MaterialState.error)) {
         return AppColors.redDark.withOpacity(0.3);
       }
