@@ -61,8 +61,17 @@ class $AssetsIconsGen {
   /// File path: assets/icons/plus.svg
   SvgGenImage get plus => const SvgGenImage('assets/icons/plus.svg');
 
+  /// File path: assets/icons/rating.svg
+  SvgGenImage get rating => const SvgGenImage('assets/icons/rating.svg');
+
   /// File path: assets/icons/search.svg
   SvgGenImage get search => const SvgGenImage('assets/icons/search.svg');
+
+  /// File path: assets/icons/upload.svg
+  SvgGenImage get upload => const SvgGenImage('assets/icons/upload.svg');
+
+  /// File path: assets/icons/user.svg
+  SvgGenImage get user => const SvgGenImage('assets/icons/user.svg');
 
   /// List of all assets
   List<SvgGenImage> get values => [
@@ -74,7 +83,10 @@ class $AssetsIconsGen {
         flagUsa,
         menu,
         plus,
-        search
+        rating,
+        search,
+        upload,
+        user
       ];
 }
 

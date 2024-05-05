@@ -79,6 +79,59 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `Information`
+  String get drawerInformation {
+    return Intl.message(
+      'Information',
+      name: 'drawerInformation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Patients`
+  String get drawerPatients {
+    return Intl.message(
+      'Patients',
+      name: 'drawerPatients',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `File transition`
+  String get drawerFileTransition {
+    return Intl.message(
+      'File transition',
+      name: 'drawerFileTransition',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `UI language`
+  String get drawerLanguage {
+    return Intl.message(
+      'UI language',
+      name: 'drawerLanguage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `All rights reserved © {date}`
+  String watermark(DateTime date) {
+    final DateFormat dateDateFormat = DateFormat.y(Intl.getCurrentLocale());
+    final String dateString = dateDateFormat.format(date);
+
+    return Intl.message(
+      'All rights reserved © $dateString',
+      name: 'watermark',
+      desc: '',
+      args: [dateString],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

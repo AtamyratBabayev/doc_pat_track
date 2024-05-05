@@ -20,13 +20,22 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
+  static String m0(date) => "All rights reserved © ${date}";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "appName":
             MessageLookupByLibrary.simpleMessage("Doctor patients track"),
+        "drawerFileTransition":
+            MessageLookupByLibrary.simpleMessage("File transition"),
+        "drawerInformation":
+            MessageLookupByLibrary.simpleMessage("Information"),
+        "drawerLanguage": MessageLookupByLibrary.simpleMessage("UI language"),
+        "drawerPatients": MessageLookupByLibrary.simpleMessage("Patients"),
         "languageSubtitle": MessageLookupByLibrary.simpleMessage(
             "To continue, select one of provided languages"),
         "languageTitle":
-            MessageLookupByLibrary.simpleMessage("Interface language")
+            MessageLookupByLibrary.simpleMessage("Interface language"),
+        "watermark": m0
       };
 }
