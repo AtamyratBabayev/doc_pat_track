@@ -2,5 +2,18 @@
     "@@locale": "en",
     "appName": "Doctor patients track",
     "languageTitle": "Interface language",
-    "languageSubtitle": "To continue, select one of provided languages"
+    "languageSubtitle": "To continue, select one of provided languages",
+    "drawerInformation": "Information",
+    "drawerPatients": "Patients",
+    "drawerFileTransition": "File transition",
+    "drawerLanguage": "UI language",
+    "watermark": "All rights reserved © {date}",
+    "@watermark": {
+        "placeholders": {
+            "date": {
+                "type": "DateTime",
+                "format": "y"
+            }
+        }
+    }
 }
