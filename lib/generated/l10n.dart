@@ -59,6 +59,26 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `Interface language`
+  String get languageTitle {
+    return Intl.message(
+      'Interface language',
+      name: 'languageTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `To continue, select one of provided languages`
+  String get languageSubtitle {
+    return Intl.message(
+      'To continue, select one of provided languages',
+      name: 'languageSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {
