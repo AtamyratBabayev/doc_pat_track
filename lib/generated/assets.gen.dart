@@ -34,6 +34,10 @@ class $AssetsFontsGen {
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/chevron_left.svg
+  SvgGenImage get chevronLeft =>
+      const SvgGenImage('assets/icons/chevron_left.svg');
+
   /// File path: assets/icons/eye.svg
   SvgGenImage get eye => const SvgGenImage('assets/icons/eye.svg');
 
@@ -51,6 +55,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/flag_usa.svg
   SvgGenImage get flagUsa => const SvgGenImage('assets/icons/flag_usa.svg');
 
+  /// File path: assets/icons/menu.svg
+  SvgGenImage get menu => const SvgGenImage('assets/icons/menu.svg');
+
   /// File path: assets/icons/plus.svg
   SvgGenImage get plus => const SvgGenImage('assets/icons/plus.svg');
 
@@ -58,8 +65,17 @@ class $AssetsIconsGen {
   SvgGenImage get search => const SvgGenImage('assets/icons/search.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values =>
-      [eye, eyeOff, flagRussia, flagTurkmenistan, flagUsa, plus, search];
+  List<SvgGenImage> get values => [
+        chevronLeft,
+        eye,
+        eyeOff,
+        flagRussia,
+        flagTurkmenistan,
+        flagUsa,
+        menu,
+        plus,
+        search
+      ];
 }
 
 class Assets {
