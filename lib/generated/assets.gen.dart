@@ -14,6 +14,9 @@ import 'package:flutter/services.dart';
 class $AssetsFontsGen {
   const $AssetsFontsGen();
 
+  /// File path: assets/fonts/gilroy_bold.ttf
+  String get gilroyBold => 'assets/fonts/gilroy_bold.ttf';
+
   /// File path: assets/fonts/gilroy_light.ttf
   String get gilroyLight => 'assets/fonts/gilroy_light.ttf';
 
@@ -24,11 +27,22 @@ class $AssetsFontsGen {
   String get gilroyRegular => 'assets/fonts/gilroy_regular.ttf';
 
   /// List of all assets
-  List<String> get values => [gilroyLight, gilroyMedium, gilroyRegular];
+  List<String> get values =>
+      [gilroyBold, gilroyLight, gilroyMedium, gilroyRegular];
 }
 
 class $AssetsIconsGen {
   const $AssetsIconsGen();
+
+  /// File path: assets/icons/chevron_left.svg
+  SvgGenImage get chevronLeft =>
+      const SvgGenImage('assets/icons/chevron_left.svg');
+
+  /// File path: assets/icons/eye.svg
+  SvgGenImage get eye => const SvgGenImage('assets/icons/eye.svg');
+
+  /// File path: assets/icons/eye_off.svg
+  SvgGenImage get eyeOff => const SvgGenImage('assets/icons/eye_off.svg');
 
   /// File path: assets/icons/flag_russia.svg
   SvgGenImage get flagRussia =>
@@ -41,8 +55,27 @@ class $AssetsIconsGen {
   /// File path: assets/icons/flag_usa.svg
   SvgGenImage get flagUsa => const SvgGenImage('assets/icons/flag_usa.svg');
 
+  /// File path: assets/icons/menu.svg
+  SvgGenImage get menu => const SvgGenImage('assets/icons/menu.svg');
+
+  /// File path: assets/icons/plus.svg
+  SvgGenImage get plus => const SvgGenImage('assets/icons/plus.svg');
+
+  /// File path: assets/icons/search.svg
+  SvgGenImage get search => const SvgGenImage('assets/icons/search.svg');
+
   /// List of all assets
-  List<SvgGenImage> get values => [flagRussia, flagTurkmenistan, flagUsa];
+  List<SvgGenImage> get values => [
+        chevronLeft,
+        eye,
+        eyeOff,
+        flagRussia,
+        flagTurkmenistan,
+        flagUsa,
+        menu,
+        plus,
+        search
+      ];
 }
 
 class Assets {
