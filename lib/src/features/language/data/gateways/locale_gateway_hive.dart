@@ -3,12 +3,11 @@ import 'package:hive/hive.dart';
 import '../../../../shared/shared.dart';
 import '../../domain/gateways/gateways.dart';
 import '../const/const.dart';
-import '../mapper/app_language_code_extension.dart';
+import '../mappers/mappers.dart';
 
-/// Gateway that fetches locale from Hive data source.
 class LocaleGatewayHive extends LocaleGateway {
   LocaleGatewayHive();
-  // Contains localization
+
   final configBox = Hive.box(HiveBoxes.language);
 
   @override
