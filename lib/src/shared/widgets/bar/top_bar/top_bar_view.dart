@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 
 import 'top_bar_props.dart';
 
+const _horizontalPadding = 10.0;
+
 class TopBar extends StatelessWidget implements PreferredSizeWidget {
   const TopBar({required this.props, super.key});
 
@@ -18,9 +20,12 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
     if (props.title != null) {
       title = Text(props.title!);
     }
-    return AppBar(
-      title: title,
-      leading: const AutoLeadingButton(),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: _horizontalPadding),
+      child: AppBar(
+        title: title,
+        leading: const AutoLeadingButton(),
+      ),
     );
   }
 }
