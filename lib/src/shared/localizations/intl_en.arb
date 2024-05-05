@@ -1,4 +1,6 @@
 {
     "@@locale": "en",
-    "appName" : "Doctor patients track"
+    "appName": "Doctor patients track",
+    "languageTitle": "Interface language",
+    "languageSubtitle": "To continue, select one of provided languages"
 }
