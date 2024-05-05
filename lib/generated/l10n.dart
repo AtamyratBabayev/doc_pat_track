@@ -49,6 +49,16 @@ class AppLocalizations {
   static AppLocalizations? maybeOf(BuildContext context) {
     return Localizations.of<AppLocalizations>(context, AppLocalizations);
   }
+
+  /// `Doctor patients track`
+  String get appName {
+    return Intl.message(
+      'Doctor patients track',
+      name: 'appName',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

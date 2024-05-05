@@ -52,16 +52,16 @@ class AppLoc {
 
   static final List<AppLanguage> supportedLanguages = <AppLanguage>[
     AppLanguage(
+        name: 'English',
+        locale: const Locale('en'),
+        flag: Assets.icons.flagUsa),
+    AppLanguage(
         name: 'Türkmen',
         locale: const Locale('tk'),
         flag: Assets.icons.flagTurkmenistan),
     AppLanguage(
         name: 'Русский',
         locale: const Locale('ru'),
-        flag: Assets.icons.flagRussia),
-    AppLanguage(
-        name: 'English',
-        locale: const Locale('en'),
         flag: Assets.icons.flagRussia),
   ];
 }
