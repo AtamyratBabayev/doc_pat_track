@@ -1,15 +1,20 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
 class AppColorsExtension extends ThemeExtension<AppColorsExtension> {
-  const AppColorsExtension({required this.onBackgroundSecondary});
+  const AppColorsExtension(
+      {required this.onBackgroundSecondary, required this.onSurfaceSecondary});
 
   final Color? onBackgroundSecondary;
+  final Color? onSurfaceSecondary;
 
   @override
-  ThemeExtension<AppColorsExtension> copyWith({Color? onBackgroundSecondary}) {
+  ThemeExtension<AppColorsExtension> copyWith(
+      {Color? onBackgroundSecondary, Color? onSurfaceSecondary}) {
     return AppColorsExtension(
         onBackgroundSecondary:
-            onBackgroundSecondary ?? this.onBackgroundSecondary);
+            onBackgroundSecondary ?? this.onBackgroundSecondary,
+        onSurfaceSecondary: onSurfaceSecondary ?? this.onSurfaceSecondary);
   }
 
   @override
@@ -24,10 +29,15 @@ class AppColorsExtension extends ThemeExtension<AppColorsExtension> {
         other.onBackgroundSecondary,
         t,
       ),
+      onSurfaceSecondary: Color.lerp(
+        onSurfaceSecondary,
+        other.onSurfaceSecondary,
+        t,
+      ),
     );
   }
 
   @override
   String toString() =>
-      'ColorsExtension(onBackgroundSecondary: $onBackgroundSecondary)';
+      'AppColorsExtension(onBackgroundSecondary: $onBackgroundSecondary, onSurfaceSecondary: $onSurfaceSecondary)';
 }
