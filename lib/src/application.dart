@@ -11,6 +11,7 @@ class DocPatTrackApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      scrollBehavior: AppCustomGestureBehavior(),
       routerConfig: _router.config(),
       localizationsDelegates: AppLoc.appDelegates,
       supportedLocales: AppLoc.supportedLocales,

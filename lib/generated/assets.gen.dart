@@ -67,6 +67,16 @@ class $AssetsIconsGen {
   /// File path: assets/icons/search.svg
   SvgGenImage get search => const SvgGenImage('assets/icons/search.svg');
 
+  /// File path: assets/icons/sling.svg
+  SvgGenImage get sling => const SvgGenImage('assets/icons/sling.svg');
+
+  /// File path: assets/icons/stethoscope.svg
+  SvgGenImage get stethoscope =>
+      const SvgGenImage('assets/icons/stethoscope.svg');
+
+  /// File path: assets/icons/tooth_add.svg
+  SvgGenImage get toothAdd => const SvgGenImage('assets/icons/tooth_add.svg');
+
   /// File path: assets/icons/upload.svg
   SvgGenImage get upload => const SvgGenImage('assets/icons/upload.svg');
 
@@ -85,6 +95,9 @@ class $AssetsIconsGen {
         plus,
         rating,
         search,
+        sling,
+        stethoscope,
+        toothAdd,
         upload,
         user
       ];

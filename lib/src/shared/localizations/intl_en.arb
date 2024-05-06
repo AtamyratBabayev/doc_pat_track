@@ -15,5 +15,8 @@
                 "format": "y"
             }
         }
-    }
+    },
+    "informationTitle": "Statistics",
+    "informationTreatments": "treatments",
+    "informationPatients": "patients"
 }
