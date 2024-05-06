@@ -15,6 +15,6 @@ class LanguageGuard extends AutoRouteGuard {
       return;
     }
 
-    await resolver.redirect(InitialLanguageScreenRoute());
+    await resolver.redirect(const InitialLanguageScreenRoute());
   }
 }

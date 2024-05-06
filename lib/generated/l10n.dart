@@ -162,6 +162,26 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `Patients`
+  String get patientSearchTitle {
+    return Intl.message(
+      'Patients',
+      name: 'patientSearchTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search patient`
+  String get patientSearchHint {
+    return Intl.message(
+      'Search patient',
+      name: 'patientSearchHint',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -40,6 +40,9 @@ class MessageLookup extends MessageLookupByLibrary {
             "To continue, select one of provided languages"),
         "languageTitle":
             MessageLookupByLibrary.simpleMessage("Interface language"),
+        "patientSearchHint":
+            MessageLookupByLibrary.simpleMessage("Search patient"),
+        "patientSearchTitle": MessageLookupByLibrary.simpleMessage("Patients"),
         "watermark": m0
       };
 }

@@ -18,5 +18,7 @@
     },
     "informationTitle": "Statistics",
     "informationTreatments": "treatments",
-    "informationPatients": "patients"
+    "informationPatients": "patients",
+    "patientSearchTitle": "Patients",
+    "patientSearchHint": "Search patient"
 }
