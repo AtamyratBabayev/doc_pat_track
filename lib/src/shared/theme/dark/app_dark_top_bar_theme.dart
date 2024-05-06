@@ -9,6 +9,7 @@ class AppDarkTopBarTheme {
   static AppBarTheme get data => AppBarTheme(
         backgroundColor: AppColors.blueGreyDark,
         foregroundColor: Colors.white,
+        scrolledUnderElevation: 0.0,
         iconTheme: const IconThemeData(color: AppColors.blueKoi, size: 32.0),
         titleTextStyle: AppTextTheme.data.headlineSmall
             ?.copyWith(color: Colors.white, fontWeight: FontWeight.bold),
