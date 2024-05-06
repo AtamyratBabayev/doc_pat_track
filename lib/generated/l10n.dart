@@ -132,6 +132,36 @@ class AppLocalizations {
       args: [dateString],
     );
   }
+
+  /// `Statistics`
+  String get informationTitle {
+    return Intl.message(
+      'Statistics',
+      name: 'informationTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `treatments`
+  String get informationTreatments {
+    return Intl.message(
+      'treatments',
+      name: 'informationTreatments',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `patients`
+  String get informationPatients {
+    return Intl.message(
+      'patients',
+      name: 'informationPatients',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

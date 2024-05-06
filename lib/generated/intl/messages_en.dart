@@ -32,6 +32,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Information"),
         "drawerLanguage": MessageLookupByLibrary.simpleMessage("UI language"),
         "drawerPatients": MessageLookupByLibrary.simpleMessage("Patients"),
+        "informationPatients": MessageLookupByLibrary.simpleMessage("patients"),
+        "informationTitle": MessageLookupByLibrary.simpleMessage("Statistics"),
+        "informationTreatments":
+            MessageLookupByLibrary.simpleMessage("treatments"),
         "languageSubtitle": MessageLookupByLibrary.simpleMessage(
             "To continue, select one of provided languages"),
         "languageTitle":
