@@ -1,1 +1,1 @@
-export 'file_transition_screen.dart';
+export 'file_transition/file_transition_screen.dart';

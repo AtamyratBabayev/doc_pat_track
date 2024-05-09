@@ -9,7 +9,7 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i6;
-import 'package:doc_pat_track/src/features/file_transition/presentation/views/screens/file_transition_screen.dart'
+import 'package:doc_pat_track/src/features/file_transition/presentation/views/screens/file_transition/file_transition_screen.dart'
     as _i1;
 import 'package:doc_pat_track/src/features/information/presentation/views/screens/information/information_screen.dart'
     as _i2;
