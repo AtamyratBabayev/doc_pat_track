@@ -44,6 +44,14 @@ class $AssetsIconsGen {
   /// File path: assets/icons/eye_off.svg
   SvgGenImage get eyeOff => const SvgGenImage('assets/icons/eye_off.svg');
 
+  /// File path: assets/icons/file_download.svg
+  SvgGenImage get fileDownload =>
+      const SvgGenImage('assets/icons/file_download.svg');
+
+  /// File path: assets/icons/file_upload.svg
+  SvgGenImage get fileUpload =>
+      const SvgGenImage('assets/icons/file_upload.svg');
+
   /// File path: assets/icons/flag_russia.svg
   SvgGenImage get flagRussia =>
       const SvgGenImage('assets/icons/flag_russia.svg');
@@ -88,6 +96,8 @@ class $AssetsIconsGen {
         chevronLeft,
         eye,
         eyeOff,
+        fileDownload,
+        fileUpload,
         flagRussia,
         flagTurkmenistan,
         flagUsa,
