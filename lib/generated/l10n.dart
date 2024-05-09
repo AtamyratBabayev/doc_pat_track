@@ -182,6 +182,56 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `File transition`
+  String get fileTransitionTitle {
+    return Intl.message(
+      'File transition',
+      name: 'fileTransitionTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Export`
+  String get fileTransitionExport {
+    return Intl.message(
+      'Export',
+      name: 'fileTransitionExport',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Transfer information to file`
+  String get fileTransitionExportSubtitle {
+    return Intl.message(
+      'Transfer information to file',
+      name: 'fileTransitionExportSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Import`
+  String get fileTransitionImport {
+    return Intl.message(
+      'Import',
+      name: 'fileTransitionImport',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Getting information from file`
+  String get fileTransitionImportSubtitle {
+    return Intl.message(
+      'Getting information from file',
+      name: 'fileTransitionImportSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

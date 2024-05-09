@@ -20,5 +20,10 @@
     "informationTreatments": "treatments",
     "informationPatients": "patients",
     "patientSearchTitle": "Patients",
-    "patientSearchHint": "Search patient"
+    "patientSearchHint": "Search patient",
+    "fileTransitionTitle": "File transition",
+    "fileTransitionExport": "Export",
+    "fileTransitionExportSubtitle": "Transfer information to file",
+    "fileTransitionImport": "Import",
+    "fileTransitionImportSubtitle": "Getting information from file"
 }

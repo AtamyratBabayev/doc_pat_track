@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../../../../../../../../shared/shared.dart';
 import 'card_count.dart';
-import 'icon_circle_background/icon_circle_background.dart';
 
 const _borderRadius = 20.0;
 const _iconBottomPadding = 15.0;
