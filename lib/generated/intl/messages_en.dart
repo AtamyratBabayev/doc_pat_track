@@ -32,6 +32,14 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Information"),
         "drawerLanguage": MessageLookupByLibrary.simpleMessage("UI language"),
         "drawerPatients": MessageLookupByLibrary.simpleMessage("Patients"),
+        "fileTransitionExport": MessageLookupByLibrary.simpleMessage("Export"),
+        "fileTransitionExportSubtitle": MessageLookupByLibrary.simpleMessage(
+            "Transfer information to file"),
+        "fileTransitionImport": MessageLookupByLibrary.simpleMessage("Import"),
+        "fileTransitionImportSubtitle": MessageLookupByLibrary.simpleMessage(
+            "Getting information from file"),
+        "fileTransitionTitle":
+            MessageLookupByLibrary.simpleMessage("File transition"),
         "informationPatients": MessageLookupByLibrary.simpleMessage("patients"),
         "informationTitle": MessageLookupByLibrary.simpleMessage("Statistics"),
         "informationTreatments":
