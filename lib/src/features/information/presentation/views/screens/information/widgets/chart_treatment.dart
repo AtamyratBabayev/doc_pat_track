@@ -65,7 +65,7 @@ class ChartTreatment extends StatelessWidget {
                           monthes[value.toInt()],
                           style: theme.textTheme.titleSmall?.copyWith(
                             fontWeight: FontWeight.bold,
-                            color: theme.colorsExtension.onBackgroundSecondary,
+                            color: theme.colorScheme.onSurfaceVariant,
                           ),
                         ),
                       );
@@ -91,7 +91,7 @@ class ChartTreatment extends StatelessWidget {
                           '${value.toInt()}',
                           style: theme.textTheme.titleSmall?.copyWith(
                             fontWeight: FontWeight.bold,
-                            color: theme.colorsExtension.onBackgroundSecondary,
+                            color: theme.colorScheme.onSurfaceVariant,
                           ),
                         ),
                       );
@@ -123,7 +123,7 @@ class ChartTreatment extends StatelessWidget {
                         ],
                         colors: [
                           theme.colorScheme.primary.withOpacity(0.4),
-                          theme.colorScheme.background.withOpacity(0.3)
+                          theme.colorScheme.surface.withOpacity(0.3)
                         ]),
                   ),
                   spots: const [

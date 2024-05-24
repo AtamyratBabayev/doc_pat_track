@@ -17,7 +17,7 @@ class InformationScreen extends StatelessWidget {
     final theme = Theme.of(context);
     final loc = context.loc;
     return ColoredBox(
-      color: theme.colorScheme.background,
+      color: theme.colorScheme.surface,
       child: SafeArea(
         child: SingleChildScrollView(
           child: SeparatedColumn(
@@ -31,7 +31,7 @@ class InformationScreen extends StatelessWidget {
                 child: Text(
                   loc.informationTitle,
                   style: theme.textTheme.displaySmall?.copyWith(
-                      color: theme.colorScheme.onBackground,
+                      color: theme.colorScheme.onSurface,
                       fontWeight: FontWeight.w500),
                 ),
               ),

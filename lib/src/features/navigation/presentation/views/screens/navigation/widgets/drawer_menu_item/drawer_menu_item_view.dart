@@ -26,7 +26,7 @@ class DrawerMenuItem extends StatelessWidget {
         child: Ink(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(_borderRadius),
-            color: props.isSelected ? theme.colorScheme.surface : null,
+            color: props.isSelected ? theme.colorScheme.surfaceBright : null,
           ),
           child: Padding(
             padding: const EdgeInsets.all(_inkInnerPadding),
@@ -48,7 +48,7 @@ class DrawerMenuItem extends StatelessWidget {
                     style: Theme.of(context)
                         .textTheme
                         .titleMedium!
-                        .copyWith(color: theme.colorScheme.onBackground),
+                        .copyWith(color: theme.colorScheme.onSurface),
                   ),
                 )
               ],

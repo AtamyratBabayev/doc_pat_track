@@ -16,9 +16,9 @@ class AppDarkColorScheme {
         onError: Colors.white,
         errorContainer: AppColors.redDark,
         onErrorContainer: Colors.white,
-        background: AppColors.blueGreyDark,
-        onBackground: Colors.white,
-        surface: AppColors.blueJay,
-        onSurface: Colors.white);
+        surface: AppColors.blueGreyDark,
+        onSurface: Colors.white,
+        onSurfaceVariant: AppColors.blueKoi,
+        surfaceBright: AppColors.blueJay);
   }
 }

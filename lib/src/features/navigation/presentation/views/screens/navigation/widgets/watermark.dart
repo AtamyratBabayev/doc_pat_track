@@ -14,7 +14,7 @@ class Watermark extends StatelessWidget {
         context.loc.watermark(DateTime.now()),
         textAlign: TextAlign.center,
         style: theme.textTheme.bodyMedium
-            ?.copyWith(color: theme.colorScheme.onBackground),
+            ?.copyWith(color: theme.colorScheme.onSurface),
       ),
     );
   }

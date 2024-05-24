@@ -52,7 +52,7 @@ class AppDrawer extends StatelessWidget {
 
     return Drawer(
       width: double.infinity,
-      backgroundColor: theme.colorScheme.background,
+      backgroundColor: theme.colorScheme.surface,
       elevation: 0.0,
       surfaceTintColor: Colors.transparent,
       shape: const RoundedRectangleBorder(),
@@ -67,7 +67,7 @@ class AppDrawer extends StatelessWidget {
                       top: _closePadding, right: _closePadding),
                   child: props.closeButtonEnabled
                       ? CloseButton(
-                          color: theme.colorsExtension.onBackgroundSecondary,
+                          color: theme.colorScheme.onSurfaceVariant,
                         )
                       : const SizedBox()),
             ),

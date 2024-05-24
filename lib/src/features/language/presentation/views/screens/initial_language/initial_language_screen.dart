@@ -42,8 +42,7 @@ class InitialLanguageScreen extends StatelessWidget {
         Text(
           loc.languageTitle,
           style: theme.textTheme.headlineLarge?.copyWith(
-              color: theme.colorScheme.onBackground,
-              fontWeight: FontWeight.w500),
+              color: theme.colorScheme.onSurface, fontWeight: FontWeight.w500),
         ),
         const HeightSpacer(_titleBottomPadding),
         Text(

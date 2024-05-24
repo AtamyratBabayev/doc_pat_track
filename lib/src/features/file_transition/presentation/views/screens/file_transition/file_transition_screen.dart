@@ -28,7 +28,7 @@ class FileTransitionScreen extends StatelessWidget {
     final loc = context.loc;
     final theme = Theme.of(context);
     return ColoredBox(
-      color: theme.colorScheme.background,
+      color: theme.colorScheme.surface,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: _horizontalPadding),
         child: Column(
@@ -37,7 +37,7 @@ class FileTransitionScreen extends StatelessWidget {
             Text(
               loc.fileTransitionTitle,
               style: theme.textTheme.displaySmall?.copyWith(
-                  color: theme.colorScheme.onBackground,
+                  color: theme.colorScheme.onSurface,
                   fontWeight: FontWeight.w500),
             ),
             const HeightSpacer(_titleBottomPadding),

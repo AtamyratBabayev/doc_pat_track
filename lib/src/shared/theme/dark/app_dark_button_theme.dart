@@ -13,27 +13,27 @@ class AppDarkButtonTheme {
   static final FilledButtonThemeData data = FilledButtonThemeData(
     style: ButtonStyle(
         backgroundColor:
-            MaterialStateProperty.resolveWith((Set<MaterialState> states) {
-          if (states.contains(MaterialState.disabled)) {
+            WidgetStateProperty.resolveWith((Set<WidgetState> states) {
+          if (states.contains(WidgetState.disabled)) {
             return AppColors.greyBlueDark;
           }
           return AppColors.blue;
         }),
         foregroundColor:
-            MaterialStateProperty.resolveWith((Set<MaterialState> states) {
-          if (states.contains(MaterialState.disabled)) {
+            WidgetStateProperty.resolveWith((Set<WidgetState> states) {
+          if (states.contains(WidgetState.disabled)) {
             return AppColors.greyBlue;
           }
           return Colors.white;
         }),
-        textStyle: MaterialStatePropertyAll(AppTextTheme.data.labelLarge
+        textStyle: WidgetStatePropertyAll(AppTextTheme.data.labelLarge
             ?.copyWith(fontWeight: FontWeight.bold)),
-        shape: MaterialStatePropertyAll(
+        shape: WidgetStatePropertyAll(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(_borderRadius),
           ),
         ),
-        padding: const MaterialStatePropertyAll(EdgeInsets.symmetric(
+        padding: const WidgetStatePropertyAll(EdgeInsets.symmetric(
             horizontal: _horizontalPadding, vertical: _verticalPadding))),
   );
 }

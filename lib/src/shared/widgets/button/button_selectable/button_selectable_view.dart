@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../theme/theme.dart';
 import 'button_selectable_props.dart';
 
 const _borderRadius = 16.0;
@@ -21,7 +20,7 @@ class ButtonSelectable extends StatelessWidget {
       borderRadius: borderRadius,
       color: props.isSelected
           ? theme.colorScheme.primary
-          : theme.colorScheme.surface,
+          : theme.colorScheme.surfaceBright,
       child: InkWell(
         onTap: props.onPressed,
         borderRadius: borderRadius,
@@ -34,7 +33,7 @@ class ButtonSelectable extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 color: props.isSelected
                     ? theme.colorScheme.onPrimary
-                    : theme.colorsExtension.onSurfaceSecondary),
+                    : theme.colorScheme.onSurfaceVariant),
           ),
         ),
       ),
