@@ -12,8 +12,8 @@ class AppDarkTextInputTheme {
 
   static final InputDecorationTheme data = InputDecorationTheme(
     filled: true,
-    fillColor: MaterialStateColor.resolveWith((states) {
-      if (states.contains(MaterialState.error)) {
+    fillColor: WidgetStateColor.resolveWith((states) {
+      if (states.contains(WidgetState.error)) {
         return AppColors.redDark.withOpacity(0.3);
       }
       return AppColors.greyBlueDark;

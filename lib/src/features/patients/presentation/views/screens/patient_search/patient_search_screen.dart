@@ -98,7 +98,7 @@ class PatientSearchScreen extends StatelessWidget {
             child: Text(
               loc.patientSearchTitle,
               style: theme.textTheme.displaySmall?.copyWith(
-                  color: theme.colorScheme.onBackground,
+                  color: theme.colorScheme.onSurface,
                   fontWeight: FontWeight.w500),
             ),
           ),

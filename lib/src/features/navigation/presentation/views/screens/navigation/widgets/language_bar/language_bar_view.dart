@@ -33,7 +33,7 @@ class LanguageBar extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: _barHorizontalMargin),
       child: DecoratedBox(
         decoration: BoxDecoration(
-          color: theme.colorScheme.surface,
+          color: theme.colorScheme.surfaceBright,
           borderRadius: BorderRadius.circular(_barBorderRadius),
         ),
         child: Padding(

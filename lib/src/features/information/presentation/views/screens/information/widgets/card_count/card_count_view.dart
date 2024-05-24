@@ -17,7 +17,7 @@ class CardCount extends StatelessWidget {
     final theme = Theme.of(context);
     return DecoratedBox(
       decoration: BoxDecoration(
-        color: theme.colorScheme.surface,
+        color: theme.colorScheme.surfaceBright,
         borderRadius: BorderRadius.circular(_borderRadius),
       ),
       child: Padding(
@@ -36,7 +36,7 @@ class CardCount extends StatelessWidget {
             Text(
               props.subtitle,
               style: theme.textTheme.labelMedium
-                  ?.copyWith(color: theme.colorsExtension.onSurfaceSecondary),
+                  ?.copyWith(color: theme.colorScheme.onSurfaceVariant),
             )
           ],
         ),

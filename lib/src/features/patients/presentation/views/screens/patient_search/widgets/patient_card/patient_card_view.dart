@@ -27,7 +27,7 @@ class PatientCard extends StatelessWidget {
             .format(patient.dateOfBirth);
 
     return Material(
-      color: theme.colorScheme.surface,
+      color: theme.colorScheme.surfaceBright,
       borderRadius: borderRadius,
       child: InkWell(
         borderRadius: borderRadius,
@@ -57,7 +57,7 @@ class PatientCard extends StatelessWidget {
                     Text(
                       formattedDateOfBirth,
                       style: theme.textTheme.labelMedium?.copyWith(
-                          color: theme.colorsExtension.onSurfaceSecondary,
+                          color: theme.colorScheme.onSurfaceVariant,
                           fontWeight: FontWeight.w500),
                     ),
                   ],

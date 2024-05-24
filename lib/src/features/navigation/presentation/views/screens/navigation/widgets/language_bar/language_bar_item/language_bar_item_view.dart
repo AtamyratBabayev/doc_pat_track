@@ -21,7 +21,7 @@ class LanguageBarItem extends StatelessWidget {
     final theme = Theme.of(context);
     final isSelected = Localizations.localeOf(context) == props.language.locale;
     return Material(
-      color: theme.colorScheme.surface,
+      color: theme.colorScheme.surfaceBright,
       child: InkWell(
         borderRadius: BorderRadius.circular(_splashBorderRadius),
         onTap: () => props.onPressed?.call(props.language),

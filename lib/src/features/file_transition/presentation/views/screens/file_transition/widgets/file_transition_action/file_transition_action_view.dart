@@ -22,7 +22,7 @@ class FileTransitionAction extends StatelessWidget {
     final borderRadius = BorderRadius.circular(_borderRadius);
 
     return Material(
-      color: theme.colorScheme.surface,
+      color: theme.colorScheme.surfaceBright,
       borderRadius: borderRadius,
       child: InkWell(
         borderRadius: borderRadius,
@@ -54,7 +54,7 @@ class FileTransitionAction extends StatelessWidget {
                     Text(
                       props.subtitle,
                       style: theme.textTheme.labelSmall?.copyWith(
-                          color: theme.colorsExtension.onSurfaceSecondary,
+                          color: theme.colorScheme.onSurfaceVariant,
                           fontWeight: FontWeight.w500),
                     ),
                   ],
