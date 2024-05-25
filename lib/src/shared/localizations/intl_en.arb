@@ -25,5 +25,14 @@
     "fileTransitionExport": "Export",
     "fileTransitionExportSubtitle": "Transfer information to file",
     "fileTransitionImport": "Import",
-    "fileTransitionImportSubtitle": "Getting information from file"
+    "fileTransitionImportSubtitle": "Getting information from file",
+    "patientDateOfBirth": "Date of birth",
+    "patientLocation": "Location",
+    "patientLastVisit": "Patient last visit",
+    "patientHistory": "Treatment history",
+    "patientAddTreatment": "Add treatment",
+    "treatment": "Treatment",
+    "patient": "Patient",
+    "patientRemove": "Remove patient",
+    "patientUpdate": "Update patient"
 }

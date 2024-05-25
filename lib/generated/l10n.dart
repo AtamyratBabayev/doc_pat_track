@@ -232,6 +232,96 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `Date of birth`
+  String get patientDateOfBirth {
+    return Intl.message(
+      'Date of birth',
+      name: 'patientDateOfBirth',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Location`
+  String get patientLocation {
+    return Intl.message(
+      'Location',
+      name: 'patientLocation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Patient last visit`
+  String get patientLastVisit {
+    return Intl.message(
+      'Patient last visit',
+      name: 'patientLastVisit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Treatment history`
+  String get patientHistory {
+    return Intl.message(
+      'Treatment history',
+      name: 'patientHistory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add treatment`
+  String get patientAddTreatment {
+    return Intl.message(
+      'Add treatment',
+      name: 'patientAddTreatment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Treatment`
+  String get treatment {
+    return Intl.message(
+      'Treatment',
+      name: 'treatment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Patient`
+  String get patient {
+    return Intl.message(
+      'Patient',
+      name: 'patient',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Remove patient`
+  String get patientRemove {
+    return Intl.message(
+      'Remove patient',
+      name: 'patientRemove',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Update patient`
+  String get patientUpdate {
+    return Intl.message(
+      'Update patient',
+      name: 'patientUpdate',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

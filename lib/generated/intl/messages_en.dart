@@ -48,9 +48,22 @@ class MessageLookup extends MessageLookupByLibrary {
             "To continue, select one of provided languages"),
         "languageTitle":
             MessageLookupByLibrary.simpleMessage("Interface language"),
+        "patient": MessageLookupByLibrary.simpleMessage("Patient"),
+        "patientAddTreatment":
+            MessageLookupByLibrary.simpleMessage("Add treatment"),
+        "patientDateOfBirth":
+            MessageLookupByLibrary.simpleMessage("Date of birth"),
+        "patientHistory":
+            MessageLookupByLibrary.simpleMessage("Treatment history"),
+        "patientLastVisit":
+            MessageLookupByLibrary.simpleMessage("Patient last visit"),
+        "patientLocation": MessageLookupByLibrary.simpleMessage("Location"),
+        "patientRemove": MessageLookupByLibrary.simpleMessage("Remove patient"),
         "patientSearchHint":
             MessageLookupByLibrary.simpleMessage("Search patient"),
         "patientSearchTitle": MessageLookupByLibrary.simpleMessage("Patients"),
+        "patientUpdate": MessageLookupByLibrary.simpleMessage("Update patient"),
+        "treatment": MessageLookupByLibrary.simpleMessage("Treatment"),
         "watermark": m0
       };
 }
