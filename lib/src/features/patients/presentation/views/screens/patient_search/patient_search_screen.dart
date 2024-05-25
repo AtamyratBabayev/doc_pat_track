@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 
 import '../../../../../../../generated/assets.gen.dart';
 import '../../../../../../shared/shared.dart';
@@ -12,12 +13,18 @@ const _searchBarBottomPadding = 5.0;
 const _patientsPadding = 10.0;
 
 @RoutePage()
-class PatientSearchScreen extends StatelessWidget {
+class PatientSearchScreen extends StatefulWidget {
   const PatientSearchScreen({super.key});
 
+  @override
+  State<PatientSearchScreen> createState() => _PatientSearchScreenState();
+}
+
+class _PatientSearchScreenState extends State<PatientSearchScreen> {
+  final _navigator = GetIt.instance<AppRouter>();
+
   void _navigateToPatient(int id) {
-    // TODO: Add implementation
-    throw UnimplementedError();
+    _navigator.push(PatientScreenRoute(id: id));
   }
 
   void _navigateToPatientAdd() {
