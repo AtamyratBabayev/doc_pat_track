@@ -34,9 +34,15 @@ class $AssetsFontsGen {
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/calendar.svg
+  SvgGenImage get calendar => const SvgGenImage('assets/icons/calendar.svg');
+
   /// File path: assets/icons/chevron_left.svg
   SvgGenImage get chevronLeft =>
       const SvgGenImage('assets/icons/chevron_left.svg');
+
+  /// File path: assets/icons/edit.svg
+  SvgGenImage get edit => const SvgGenImage('assets/icons/edit.svg');
 
   /// File path: assets/icons/eye.svg
   SvgGenImage get eye => const SvgGenImage('assets/icons/eye.svg');
@@ -63,8 +69,14 @@ class $AssetsIconsGen {
   /// File path: assets/icons/flag_usa.svg
   SvgGenImage get flagUsa => const SvgGenImage('assets/icons/flag_usa.svg');
 
+  /// File path: assets/icons/location.svg
+  SvgGenImage get location => const SvgGenImage('assets/icons/location.svg');
+
   /// File path: assets/icons/menu.svg
   SvgGenImage get menu => const SvgGenImage('assets/icons/menu.svg');
+
+  /// File path: assets/icons/phone.svg
+  SvgGenImage get phone => const SvgGenImage('assets/icons/phone.svg');
 
   /// File path: assets/icons/plus.svg
   SvgGenImage get plus => const SvgGenImage('assets/icons/plus.svg');
@@ -85,6 +97,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/tooth_add.svg
   SvgGenImage get toothAdd => const SvgGenImage('assets/icons/tooth_add.svg');
 
+  /// File path: assets/icons/trash.svg
+  SvgGenImage get trash => const SvgGenImage('assets/icons/trash.svg');
+
   /// File path: assets/icons/upload.svg
   SvgGenImage get upload => const SvgGenImage('assets/icons/upload.svg');
 
@@ -93,7 +108,9 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<SvgGenImage> get values => [
+        calendar,
         chevronLeft,
+        edit,
         eye,
         eyeOff,
         fileDownload,
@@ -101,16 +118,30 @@ class $AssetsIconsGen {
         flagRussia,
         flagTurkmenistan,
         flagUsa,
+        location,
         menu,
+        phone,
         plus,
         rating,
         search,
         sling,
         stethoscope,
         toothAdd,
+        trash,
         upload,
         user
       ];
+}
+
+class $AssetsImagesGen {
+  const $AssetsImagesGen();
+
+  /// File path: assets/images/patient_on_clouds.jpg
+  AssetGenImage get patientOnClouds =>
+      const AssetGenImage('assets/images/patient_on_clouds.jpg');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [patientOnClouds];
 }
 
 class Assets {
@@ -118,6 +149,81 @@ class Assets {
 
   static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsIconsGen icons = $AssetsIconsGen();
+  static const $AssetsImagesGen images = $AssetsImagesGen();
+}
+
+class AssetGenImage {
+  const AssetGenImage(this._assetName);
+
+  final String _assetName;
+
+  Image image({
+    Key? key,
+    AssetBundle? bundle,
+    ImageFrameBuilder? frameBuilder,
+    ImageErrorWidgetBuilder? errorBuilder,
+    String? semanticLabel,
+    bool excludeFromSemantics = false,
+    double? scale,
+    double? width,
+    double? height,
+    Color? color,
+    Animation<double>? opacity,
+    BlendMode? colorBlendMode,
+    BoxFit? fit,
+    AlignmentGeometry alignment = Alignment.center,
+    ImageRepeat repeat = ImageRepeat.noRepeat,
+    Rect? centerSlice,
+    bool matchTextDirection = false,
+    bool gaplessPlayback = false,
+    bool isAntiAlias = false,
+    String? package,
+    FilterQuality filterQuality = FilterQuality.low,
+    int? cacheWidth,
+    int? cacheHeight,
+  }) {
+    return Image.asset(
+      _assetName,
+      key: key,
+      bundle: bundle,
+      frameBuilder: frameBuilder,
+      errorBuilder: errorBuilder,
+      semanticLabel: semanticLabel,
+      excludeFromSemantics: excludeFromSemantics,
+      scale: scale,
+      width: width,
+      height: height,
+      color: color,
+      opacity: opacity,
+      colorBlendMode: colorBlendMode,
+      fit: fit,
+      alignment: alignment,
+      repeat: repeat,
+      centerSlice: centerSlice,
+      matchTextDirection: matchTextDirection,
+      gaplessPlayback: gaplessPlayback,
+      isAntiAlias: isAntiAlias,
+      package: package,
+      filterQuality: filterQuality,
+      cacheWidth: cacheWidth,
+      cacheHeight: cacheHeight,
+    );
+  }
+
+  ImageProvider provider({
+    AssetBundle? bundle,
+    String? package,
+  }) {
+    return AssetImage(
+      _assetName,
+      bundle: bundle,
+      package: package,
+    );
+  }
+
+  String get path => _assetName;
+
+  String get keyName => _assetName;
 }
 
 class SvgGenImage {

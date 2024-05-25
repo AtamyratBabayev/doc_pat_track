@@ -1,1 +1,1 @@
-enum ButtonVariant { primary, secondary }
+enum ButtonVariant { primary, secondary, tertiary }

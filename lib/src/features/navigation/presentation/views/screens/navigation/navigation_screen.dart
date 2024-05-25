@@ -14,8 +14,8 @@ class NavigationScreen extends StatelessWidget {
       homeIndex: 0,
       routes: const [
         InformationScreenRoute(),
-        PatientSearchScreenRoute(),
-        FileTransitionScreenRoute()
+        PatientsTabRoute(),
+        FileTransitionTabRoute()
       ],
       builder: (routeContext, child) {
         final router = AutoTabsRouter.of(routeContext);
