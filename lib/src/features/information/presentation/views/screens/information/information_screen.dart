@@ -62,6 +62,7 @@ class InformationScreen extends StatelessWidget {
                   ],
                 ),
               ),
+              // TODO: Add profit widget
             ],
           ),
         ),
