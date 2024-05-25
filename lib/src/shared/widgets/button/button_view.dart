@@ -8,16 +8,27 @@ class Button extends StatelessWidget {
 
   final ButtonProps props;
 
+  ButtonStyle? _getButtonStyle(ThemeData theme) {
+    if (props.buttonVariant == ButtonVariant.primary) {
+      return null;
+    }
+
+    if (props.buttonVariant == ButtonVariant.secondary) {
+      return FilledButton.styleFrom(
+          backgroundColor: theme.colorScheme.secondary,
+          foregroundColor: theme.colorScheme.onSecondary);
+    }
+
+    return FilledButton.styleFrom(
+        backgroundColor: theme.colorScheme.error,
+        foregroundColor: theme.colorScheme.onError);
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
-    ButtonStyle? secondaryStyle;
-    if (props.buttonVariant == ButtonVariant.secondary) {
-      secondaryStyle = FilledButton.styleFrom(
-          backgroundColor: theme.colorScheme.secondary,
-          foregroundColor: theme.colorScheme.onSecondary);
-    }
+    ButtonStyle? secondaryStyle = _getButtonStyle(theme);
 
     return FilledButton(
       onPressed: props.onPressed,
