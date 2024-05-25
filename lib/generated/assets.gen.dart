@@ -41,6 +41,9 @@ class $AssetsIconsGen {
   SvgGenImage get chevronLeft =>
       const SvgGenImage('assets/icons/chevron_left.svg');
 
+  /// File path: assets/icons/edit.svg
+  SvgGenImage get edit => const SvgGenImage('assets/icons/edit.svg');
+
   /// File path: assets/icons/eye.svg
   SvgGenImage get eye => const SvgGenImage('assets/icons/eye.svg');
 
@@ -94,6 +97,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/tooth_add.svg
   SvgGenImage get toothAdd => const SvgGenImage('assets/icons/tooth_add.svg');
 
+  /// File path: assets/icons/trash.svg
+  SvgGenImage get trash => const SvgGenImage('assets/icons/trash.svg');
+
   /// File path: assets/icons/upload.svg
   SvgGenImage get upload => const SvgGenImage('assets/icons/upload.svg');
 
@@ -104,6 +110,7 @@ class $AssetsIconsGen {
   List<SvgGenImage> get values => [
         calendar,
         chevronLeft,
+        edit,
         eye,
         eyeOff,
         fileDownload,
@@ -120,6 +127,7 @@ class $AssetsIconsGen {
         sling,
         stethoscope,
         toothAdd,
+        trash,
         upload,
         user
       ];
